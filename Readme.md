@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Джамиль Ахунов](https://up.htmlacademy.ru/adaptive/20/user/217896).
-* Наставник: `Неизвестно`.
+* Наставник: `Анна Пономарёва`.
 
 ---
 
