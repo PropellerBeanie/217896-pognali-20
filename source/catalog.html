@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
 </head>
 
-<body class="page__body">
+<body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a href="index.html" class="page-header__logo">
       <img src="img/logotype-mobile.svg" width="96" height="15" alt="Погнали?">
     </a>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <div class="main-nav__wrapper">
-      <nav class="main-nav">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="photo.html">
@@ -40,28 +40,28 @@
             </a>
           </li>
         </ul>
-      </nav>
-      <div class="main-nav__contacts contacts">
-        <a class="contacts__phone" href="tel:8800555-86-28">
-          8 800 555-86-28
-        </a>
-        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-          mail@htmlacademy.ru
-        </a>
       </div>
-      <div class="main-nav__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
-          </li>
-        </ul>
-      </div>
+    </nav>
+    <div class="main-nav__contacts contacts">
+      <a class="contacts__phone" href="tel:8800555-86-28">
+        8 800 555-86-28
+      </a>
+      <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+        mail@htmlacademy.ru
+      </a>
+    </div>
+    <div class="main-nav__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+        </li>
+      </ul>
     </div>
   </header>
   <main class="page-main">
@@ -89,18 +89,18 @@
           <div class="catalog__profile-wishlist-wrapper countries-wishlist">
             <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
             <ul class="countries-wishlist__list">
-              <li class="countries-wishlist__item">Шри-Ланка</li>
-              <li class="countries-wishlist__item">Тайланд</li>
-              <li class="countries-wishlist__item">Сейшелы</li>
+              <li class="countries-wishlist__item countries-wishlist__item--sri-lanka">Шри-Ланка</li>
+              <li class="countries-wishlist__item countries-wishlist__item--thailand">Тайланд</li>
+              <li class="countries-wishlist__item countries-wishlist__item--seychelles">Сейшелы</li>
             </ul>
           </div>
           <div class="catalog__transport-list-wrapper">
             <h3 class="catalog__transport-list-heading">транспорт:</h3>
             <ul class="catalog__transport-list catalog-transport-list">
-              <li class="catalog-transport-list__item"><span>Авиа</span></li>
-              <li class="catalog-transport-list__item"><span>Автобус</span></li>
-              <li class="catalog-transport-list__item"><span>Велосипед</span></li>
-              <li class="catalog-transport-list__item"><span>Пешком</span></li>
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
             </ul>
           </div>
           <div class="catalog__profile-level-wrapper">
@@ -129,17 +129,17 @@
           <div class="catalog__profile-wishlist-wrapper countries-wishlist">
             <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
             <ul class="countries-wishlist__list">
-              <li class="countries-wishlist__item">Бельгия</li>
-              <li class="countries-wishlist__item">Чехия</li>
+              <li class="countries-wishlist__item countries-wishlist__item--belgium">Бельгия</li>
+              <li class="countries-wishlist__item countries-wishlist__item--czech-republic">Чехия</li>
             </ul>
           </div>
           <div class="catalog__transport-list-wrapper">
             <h3 class="catalog__transport-list-heading">транспорт:</h3>
             <ul class="catalog__transport-list catalog-transport-list">
-              <li class="catalog-transport-list__item"><span>Авиа</span></li>
-              <li class="catalog-transport-list__item"><span>Автобус</span></li>
-              <li class="catalog-transport-list__item"><span>Велосипед</span></li>
-              <li class="catalog-transport-list__item"><span>Пешком</span></li>
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
             </ul>
           </div>
           <div class="catalog__profile-level-wrapper">
@@ -168,18 +168,18 @@
           <div class="catalog__profile-wishlist-wrapper countries-wishlist">
             <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
             <ul class="countries-wishlist__list">
-              <li class="countries-wishlist__item">США</li>
-              <li class="countries-wishlist__item">Австралия</li>
-              <li class="countries-wishlist__item">Доминика</li>
+              <li class="countries-wishlist__item countries-wishlist__item--usa">США</li>
+              <li class="countries-wishlist__item countries-wishlist__item--australia">Австралия</li>
+              <li class="countries-wishlist__item countries-wishlist__item--dominica">Доминика</li>
             </ul>
           </div>
           <div class="catalog__transport-list-wrapper">
             <h3 class="catalog__transport-list-heading">транспорт:</h3>
             <ul class="catalog__transport-list catalog-transport-list">
-              <li class="catalog-transport-list__item"><span>Авиа</span></li>
-              <li class="catalog-transport-list__item"><span>Автобус</span></li>
-              <li class="catalog-transport-list__item"><span>Велосипед</span></li>
-              <li class="catalog-transport-list__item"><span>Пешком</span></li>
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
             </ul>
           </div>
           <div class="catalog__profile-level-wrapper">
@@ -207,17 +207,17 @@
           <div class="catalog__profile-wishlist-wrapper countries-wishlist">
             <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
             <ul class="countries-wishlist__list">
-              <li class="countries-wishlist__item">Великобритания</li>
-              <li class="countries-wishlist__item">Германия</li>
+              <li class="countries-wishlist__item countries-wishlist__uk">Великобритания</li>
+              <li class="countries-wishlist__item countries-wishlist__germany">Германия</li>
             </ul>
           </div>
           <div class="catalog__transport-list-wrapper">
             <h3 class="catalog__transport-list-heading">транспорт:</h3>
             <ul class="catalog__transport-list catalog-transport-list">
-              <li class="catalog-transport-list__item"><span>Авиа</span></li>
-              <li class="catalog-transport-list__item"><span>Автобус</span></li>
-              <li class="catalog-transport-list__item"><span>Велосипед</span></li>
-              <li class="catalog-transport-list__item"><span>Пешком</span></li>
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
             </ul>
           </div>
           <div class="catalog__profile-level-wrapper">
