@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <img src="img/logotype-mobile.svg" width="96" height="15" alt="Погнали?">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="photo.html">
+              О сервисе
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Направления
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a>
+              Попутчики
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login js-login" href="login.html">
+              Авторизация
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-nav__contacts contacts">
+      <a class="contacts__phone" href="tel:8800555-86-28">
+        8 800 555-86-28
+      </a>
+      <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+        mail@htmlacademy.ru
+      </a>
+    </div>
+    <div class="main-nav__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Попутчики</h1>
+    <div class="page-main__catalog catalog">
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <div class="catalog__profile-heading">
+            <a href="#" class="catalog__profile-img-wrapper">
+              <img class="catalog__profile-img" src="#" alt="Фото пользователя" width="70" height="70">
+              <span class="catalog__profile-likes">1,5 М</span>
+            </a>
+            <a href="#" class="catalog__profile-name">Таня Фирсова</a>
+          </div>
+          <div class="catalog__profile-hashtag-list-wrapper">
+            <ul class="catalog__profile-hashtag-list profile-hashtag-list">
+              <li class="profile-hashtag-list__item"><a href="#">#ЗОЖ</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#ПП</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#Фитнес</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#пляж</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#авокадо</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#смузи</a></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-wishlist-wrapper countries-wishlist">
+            <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
+            <ul class="countries-wishlist__list">
+              <li class="countries-wishlist__item countries-wishlist__item--sri-lanka">Шри-Ланка</li>
+              <li class="countries-wishlist__item countries-wishlist__item--thailand">Тайланд</li>
+              <li class="countries-wishlist__item countries-wishlist__item--seychelles">Сейшелы</li>
+            </ul>
+          </div>
+          <div class="catalog__transport-list-wrapper">
+            <h3 class="catalog__transport-list-heading">транспорт:</h3>
+            <ul class="catalog__transport-list catalog-transport-list">
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-level-wrapper">
+            <h3 class="catalog__profile-level-heading">левел:</h3>
+            <img class="catalog__profile-level-img" src="#" alt="левел 99" width="45" height="45">
+          </div>
+          <a class="catalog__profile-button" href="#">Позвать!</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__profile-heading">
+            <a href="#" class="catalog__profile-img-wrapper">
+              <img class="catalog__profile-img" src="#" alt="Фото пользователя" width="70" height="70">
+              <span class="catalog__profile-likes">1500</span>
+            </a>
+            <a href="#" class="catalog__profile-name">Петя Демин</a>
+          </div>
+          <div class="catalog__profile-hashtag-list-wrapper">
+            <ul class="catalog__profile-hashtag-list profile-hashtag-list">
+              <li class="profile-hashtag-list__item"><a href="#">#бургер</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#бар</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#футбол</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#концерт</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#крафт</a></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-wishlist-wrapper countries-wishlist">
+            <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
+            <ul class="countries-wishlist__list">
+              <li class="countries-wishlist__item countries-wishlist__item--belgium">Бельгия</li>
+              <li class="countries-wishlist__item countries-wishlist__item--czech-republic">Чехия</li>
+            </ul>
+          </div>
+          <div class="catalog__transport-list-wrapper">
+            <h3 class="catalog__transport-list-heading">транспорт:</h3>
+            <ul class="catalog__transport-list catalog-transport-list">
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-level-wrapper">
+            <h3 class="catalog__profile-level-heading">левел:</h3>
+            <img class="catalog__profile-level-img" src="#" alt="левел 80" width="45" height="45">
+          </div>
+          <a class="catalog__profile-button" href="#">Позвать!</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__profile-heading">
+            <a href="#" class="catalog__profile-img-wrapper">
+              <img class="catalog__profile-img" src="#" alt="Фото пользователя" width="70" height="70">
+              <span class="catalog__profile-likes">170</span>
+            </a>
+            <a href="#" class="catalog__profile-name">Марк Смолов</a>
+          </div>
+          <div class="catalog__profile-hashtag-list-wrapper">
+            <ul class="catalog__profile-hashtag-list profile-hashtag-list">
+              <li class="profile-hashtag-list__item"><a href="#">#рэп</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#тату</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#хайпбист</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#кроссовки</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#суприм</a></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-wishlist-wrapper countries-wishlist">
+            <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
+            <ul class="countries-wishlist__list">
+              <li class="countries-wishlist__item countries-wishlist__item--usa">США</li>
+              <li class="countries-wishlist__item countries-wishlist__item--australia">Австралия</li>
+              <li class="countries-wishlist__item countries-wishlist__item--dominica">Доминика</li>
+            </ul>
+          </div>
+          <div class="catalog__transport-list-wrapper">
+            <h3 class="catalog__transport-list-heading">транспорт:</h3>
+            <ul class="catalog__transport-list catalog-transport-list">
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-level-wrapper">
+            <h3 class="catalog__profile-level-heading">левел:</h3>
+            <img class="catalog__profile-level-img" src="#" alt="левел 25" width="45" height="45">
+          </div>
+          <a class="catalog__profile-button" href="#">Позвать!</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__profile-heading">
+            <a href="#" class="catalog__profile-img-wrapper">
+              <img class="catalog__profile-img" src="#" alt="Фото пользователя" width="70" height="70">
+              <span class="catalog__profile-likes">23</span>
+            </a>
+            <a href="#" class="catalog__profile-name">Лариса Роговая</a>
+          </div>
+          <div class="catalog__profile-hashtag-list-wrapper">
+            <ul class="catalog__profile-hashtag-list profile-hashtag-list">
+              <li class="profile-hashtag-list__item"><a href="#">#образование</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#карьера</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#учеба</a></li>
+              <li class="profile-hashtag-list__item"><a href="#">#линкедин</a></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-wishlist-wrapper countries-wishlist">
+            <h3 class="cointries-wishlist__heading">Хочет посетить:</h3>
+            <ul class="countries-wishlist__list">
+              <li class="countries-wishlist__item countries-wishlist__uk">Великобритания</li>
+              <li class="countries-wishlist__item countries-wishlist__germany">Германия</li>
+            </ul>
+          </div>
+          <div class="catalog__transport-list-wrapper">
+            <h3 class="catalog__transport-list-heading">транспорт:</h3>
+            <ul class="catalog__transport-list catalog-transport-list">
+              <li class="catalog-transport-list__item" aria-label="Авиа"></li>
+              <li class="catalog-transport-list__item" aria-label="Автобус"></li>
+              <li class="catalog-transport-list__item" aria-label="Велосипед"></li>
+              <li class="catalog-transport-list__item" aria-label="Пешком"></li>
+            </ul>
+          </div>
+          <div class="catalog__profile-level-wrapper">
+            <h3 class="catalog__profile-level-heading">левел:</h3>
+            <img class="catalog__profile-level-img" src="#" alt="левел 50" width="45" height="45">
+          </div>
+          <a class="catalog__profile-button" href="#">Позвать!</a>
+        </li>
+      </ul>
+      <a class="catalog__more-button" href="#">Показать еще</a>
+      <div class="catalog__pagination-wrapper pagination">
+        <ul class="pagination__list">
+          <li class="pagination__back">
+            <a class="pagination__link-back" href="#">Назад</a>
+          </li>
+          <li class="pagination__forward">
+            <a class="pagination__link-forward" href="#">Вперед</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img src="img/logotype-mobile.svg" width="96" height="15" alt="Погнали?">
+    </a>
+    <div class="page-footer__social footer-social">
+      <ul class="footer-social__list">
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="footer-social__item">
+          <a class="footer-social__link footer-social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__developer developer">
+      <span class="developer__text">Разработано</span>
+      <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="developer__img" src="#" width="27" height="33" alt="Погнали?">
+      </a>
+    </div>
+  </footer>
+</body>
