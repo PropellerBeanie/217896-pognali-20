@@ -66,6 +66,221 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Направления</h1>
+    <div class="page-main__profile-info profile-info">
+      <form class="profile-info__form" action="https://echo.htmlacademy.ru">
+        <img class="profile-info__level" src="#" alt="левел 80" width="100" height="100">
+        <img class="profile-info__photo" src="#" alt="Фото пользователя" width="100" height="100">
+        <button class="profile-info__button" type="button" name="change-foto">Cменить фото</button>
+        <label class="profile-info__label" for="profile-tags">Тэги</label>
+        <textarea class="profile-info__tags" name="profile-tags" id="profile-tags" rows="5" cols="80">#бургер #бар #футбол #концерт #крафт</textarea>
+        <fieldset class="profile-info__fieldset">
+          <legend class="profile-info__fieldset-name">Транспорт</legend>
+          <input class="profile-info__checkbox" type="checkbox" id="avia" name="avia" checked>
+          <label class="profile-info__label" for="avia">Авиа</label>
+          <input class="profile-info__checkbox" type="checkbox" id="bus" name="bus" checked>
+          <label class="profile-info__label" for="bus">Автобус</label>
+          <input class="profile-info__checkbox" type="checkbox" id="bike" name="bike">
+          <label class="profile-info__label" for="bike">Велосипед</label>
+          <input class="profile-info__checkbox" type="checkbox" id="on-foot" name="on-foot" checked>
+          <label class="profile-info__label" for="on-foot">Пешком</label>
+        </fieldset>
+      </form>
+    </div>
+    <div class="page-main__user-plans user-plans">
+      <h2 class="user-plans__heading">Мои планы:</h2>
+      <ol class="user-plans__list">
+        <li class="user-plans__item">
+          <p class="user-plans__number">1.</p>
+          <p class="user-plans__countries">Франция, Италия</p>
+          <p class="user-plans__travelers-number">3 попутчика</p>
+          <p class="user-plans__date">26 мар — 29 мар</p>
+          <a href="#" class="user-plans__button">Изменить</a>
+        </li>
+        <li class="user-plans__item">
+          <p class="user-plans__number">2.</p>
+          <p class="user-plans__countries">Таиланд, Индонезия</p>
+          <p class="user-plans__travelers-number">1 попутчик</p>
+          <p class="user-plans__date">1 июл — 15 июл</p>
+          <a href="#" class="user-plans__button">Изменить</a>
+        </li>
+      </ol>
+    </div>
+    <div class="page-main__add-plan add-plan">
+      <h2 class="add-plan__heading">Добавить план:</h2>
+      <ul class="add-plan__steps-marker">
+        <li class="add-plan__steps-marker-item">
+          <span class="add-plan__steps-marker-dot add-plan__steps-marker-dot--current"></span>
+        </li>
+        <li class="add-plan__steps-marker-item">
+          <span class="add-plan__steps-marker-dot"></span>
+        </li>
+        <li class="add-plan__steps-marker-item">
+          <span class="add-plan__steps-marker-dot"></span>
+        </li>
+      </ul>
+      <form class="add-plan__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="add-plan__step step">
+          <fieldset class="step__fieldset" id="step-1">
+            <legend class="step__heading">Шаг 1. Даты пребывания</legend>
+            <p class="step__description">
+              Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <label class="step__input-label" for="travelers-number">
+              <b class="step__input-heading">Ищу попутчиков:</b>
+              <span class="step__input-units">Чел.</span>
+            </label>
+            <input class="step__input-number" type="number" name="travelers-number" id="travelers-number" value="2">
+            <label class="step__input-label" for="duration-days">
+              <b class="step__input-heading">Длительность:</b>
+              <span class="step__input-units">Дн.</span>
+            </label>
+            <input class="step__input-number" type="number" name="duration-days" id="duration-days" value="2">
+            <input class="step__input-checkbox" type="checkbox" name="children-checkbox" id="children-checkbox" value="yes" checked>
+            <label class="step__input-label" for="children-checkbox">Можно с детьми</label>
+            <div class="step__calendar calendar">
+              <div class="calendar__heading-wrapper">
+                <h3 class="calendar__heading">Март 2019</h3>
+              </div>
+              <ul class="calendar__week-days-list week-days-list">
+                <li class="week-days-list__item">П</li>
+                <li class="week-days-list__item">В</li>
+                <li class="week-days-list__item">С</li>
+                <li class="week-days-list__item">Ч</li>
+                <li class="week-days-list__item">П</li>
+                <li class="week-days-list__item week-days-list__item--weekend">С</li>
+                <li class="week-days-list__item week-days-list__item--weekend">В</li>
+              </ul>
+              <ul class="calendar__month-list month-list">
+                <li class="month-list__item">24</li>
+                <li class="month-list__item">25</li>
+                <li class="month-list__item">26</li>
+                <li class="month-list__item">27</li>
+                <li class="month-list__item">28</li>
+                <li class="month-list__item">1<span class="month-list__month visually-hidden">мар</span></li>
+                <li class="month-list__item">2</li>
+                <li class="month-list__item">3</li>
+                <li class="month-list__item">4</li>
+                <li class="month-list__item">5</li>
+                <li class="month-list__item">6</li>
+                <li class="month-list__item">7</li>
+                <li class="month-list__item">8</li>
+                <li class="month-list__item">9</li>
+                <li class="month-list__item">10</li>
+                <li class="month-list__item">11</li>
+                <li class="month-list__item">12</li>
+                <li class="month-list__item">13</li>
+                <li class="month-list__item">14</li>
+                <li class="month-list__item">15</li>
+                <li class="month-list__item">16</li>
+                <li class="month-list__item">17</li>
+                <li class="month-list__item">18</li>
+                <li class="month-list__item">19</li>
+                <li class="month-list__item">20</li>
+                <li class="month-list__item">21</li>
+                <li class="month-list__item">22</li>
+                <li class="month-list__item">23</li>
+                <li class="month-list__item">24</li>
+                <li class="month-list__item">25</li>
+                <li class="month-list__item month-list__item--selected month-list__item--selected-first">26<span class="month-list__in-out visually-hidden">Заезд</span></li>
+                <li class="month-list__item month-list__item--selected">27</li>
+                <li class="month-list__item month-list__item--selected">28<span class="month-list__in-out visually-hidden">Выезд</span></li>
+                <li class="month-list__item">29</li>
+                <li class="month-list__item">30</li>
+                <li class="month-list__item">31</li>
+                <li class="month-list__item">1<span class="month-list__month visually-hidden">апр</span></li>
+                <li class="month-list__item">2</li>
+                <li class="month-list__item">3</li>
+                <li class="month-list__item">4</li>
+                <li class="month-list__item">5</li>
+                <li class="month-list__item">6</li>
+              </ul>
+            </div>
+            <a class="step__next-button" href="#step-2">Следующий шаг</a>
+          </fieldset>
+          <fieldset class="step__fieldset" id="step-2">
+            <legend class="step__heading">Шаг 2. Маршрут</legend>
+            <p class="step__description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+            <select class="step__country-select country-select country-select--bosnia-and-herzegovina" name="country-1" id="country-1">
+              <option class="country-select__option" value="bosnia-and-herzegovina" selected>Босния и герцеговина</option>
+            </select>
+            <select class="step__country-select country-select country-select--czech-republic" name="country-2" id="country-2">
+              <option class="country-select__option" value="czech-republic" selected>Чехия</option>
+            </select>
+            <select class="step__country-select no-js" name="country-3" id="country-3">
+              <option class="country-select__option hidden" value="none" disabled selected>Выберите страну</option>
+              <option class="country-select__option" value="australia">Австралия</option>
+              <option class="country-select__option" value="austria">Австрия</option>
+              <option class="country-select__option" value="azerbaijan">Азербайджан</option>
+              <option class="country-select__option" value="albania">Албания</option>
+              <option class="country-select__option" value="algeria">Алжир</option>
+              <option class="country-select__option" value="angola">Ангола</option>
+              <option class="country-select__option" value="andorra">Андорра</option>
+              <option class="country-select__option" value="antigua-and-barmuda">Антигуа и Барбуда</option>
+              <option class="country-select__option" value="argentina">Аргентина</option>
+              <option class="country-select__option" value="armenia">Армения</option>
+            </select>
+            <div class="step__country-select country-select">
+              <ul class="country-select__alphabet-list">
+                <li class="country-select__alphabet-item country-select__alphabet-item--current"><a href="#" class="country-select__alphabet-link">А</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Б</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">В</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Г</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Д</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Е</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">З</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">И</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">К</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Л</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">М</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Н</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">О</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">П</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Р</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">С</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Т</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">У</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Ф</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Х</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Ч</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Ш</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Э</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Ю</a></li>
+                <li class="country-select__alphabet-item"><a href="#" class="country-select__alphabet-link">Я</a></li>
+              </ul>
+              <ul class="country-select__countries-list">
+                <li class="country-select__countries-list-item"><a href="#">Австралия</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Австрия</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Азербайджан</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Албания</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Алжир</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Ангола</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Андорра</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Антигуа и Барбуда</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Аргентина</a></li>
+                <li class="country-select__countries-list-item"><a href="#">Армения</a></li>
+              </ul>
+            </div>
+            <button class="step__add-country-btn" type="button" name="add-country">Добавить страну</button>
+            <a class="step__next-button" href="#step-3">Следующий шаг</a>
+            <a class="step__prev-button" href="#step-1">На шаг назад</a>
+          </fieldset>
+          <fieldset class="step__fieldset" id="step-3">
+            <legend class="step__heading">Шаг 3. Развлечения</legend>
+            <p class="step__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <label class="step__input-label" for="country-1-textarea">
+              <b class="step__input-heading step__input-heading--bosnia-and-herzegovina">Босния и Герцеговина</b>
+            </label>
+            <textarea class="step__input-textarea" id="country-1-textarea" name="country-1-textarea" placeholder="План действий" rows="8" cols="80"></textarea>
+            <label class="step__input-label" for="country-2-textarea">
+              <b class="step__input-heading step__input-heading--czech-republic">Чехия</b>
+            </label>
+            <textarea class="step__input-textarea" id="country-2-textarea" name="country-2-textarea" placeholder="План действий" rows="8" cols="80">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+          </fieldset>
+          <button class="add-plan__submit-button" type="submit" name="plan-submit-button">Отправить</button>
+          <a class="step__prev-button" href="#step-2">На шаг назад</a>
+        </div>
+      </form>
+    </div>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo">

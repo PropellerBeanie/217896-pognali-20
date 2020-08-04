@@ -66,6 +66,110 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Попутчики</h1>
+    <div class="page-main__countries-filter countries-filter">
+      <h3 class="countries-filter__heading">Фильтрация по странам</h3>
+      <button class="countries-filer__open-button" type="button">Открыть фильтр</button>
+      <ul class="countries-filter__continents-list continents-list">
+        <li class="contents-list__item"><a class="contents-list__link" href="#">Европа</a></li>
+        <li class="contents-list__item"><a class="contents-list__link" href="#">Азия</a></li>
+        <li class="contents-list__item"><a class="contents-list__link" href="#">Америка</a></li>
+        <li class="contents-list__item"><a class="contents-list__link" href="#">Острова</a></li>
+      </ul>
+      <ul class="countries-filter__countries-alphabet countries-alphabet">
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">А</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Б</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">В</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Г</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Д</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Е</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">З</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">И</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">К</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Л</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">М</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Н</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">О</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">П</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Р</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">С</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Т</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">У</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Ф</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Х</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Ч</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Ш</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Э</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Ю</a></li>
+        <li class="countries-alphabet__item"><a href="#" class="countries-alphabet__link">Я</a></li>
+      </ul>
+      <ul class="countries-filter__countries-list countries-list">
+        <li class="countries-list__item"><a href="/oceania/australia">Австралия</a></li>
+        <li class="countries-list__item"><a href="/europe/austria">Австрия</a></li>
+        <li class="countries-list__item"><a href="#">Азербайджан</a></li>
+        <li class="countries-list__item"><a href="#">Албания</a></li>
+        <li class="countries-list__item"><a href="#">Алжир</a></li>
+        <li class="countries-list__item"><a href="#">Ангола</a></li>
+        <li class="countries-list__item"><a href="#">Андорра</a></li>
+        <li class="countries-list__item"><a href="#">Антигуа и Барбуда</a></li>
+        <li class="countries-list__item"><a href="#">Аргентина</a></li>
+        <li class="countries-list__item"><a href="#">Армения</a></li>
+        <li class="countries-list__item"><a href="#">Афганистан</a></li>
+      </ul>
+      <button class="countries-filer__hide-button" type="button">Cвернуть</button>
+    </div>
+    <div class="page-main__travelers-filter travelers-filter">
+      <form class="travelers-filter__form" action="https://echo.htmlacademy.ru" method="post">
+        <b class="travelers-filter__text">Подберите идеального попутчика</b>
+        <fieldset class="travelers-filter__fieldset filter">
+          <legend class="filter__name">Хобби<button class="filter_switch" type="button">Показать опции</button></legend>
+        </fieldset>
+        <fieldset class="travelers-filter__fieldset filter">
+          <legend class="filter__name">Музыка<button class="filter_switch" type="button">Скрыть опции</button></legend>
+          <input class="filter__checkbox" type="checkbox" id="hard-rock" name="hard-rock" checked>
+          <label class="filter__label" for="hard-rock">Тяжелый рок</label>
+          <input class="filter__checkbox" type="checkbox" id="russian-rap" name="russian-rap" checked>
+          <label class="filter__label" for="russian-rap">Русский рэп</label>
+          <input class="filter__checkbox" type="checkbox" id="eurodance" name="eurodance">
+          <label class="filter__label" for="eurodance">Евроденс</label>
+        </fieldset>
+        <fieldset class="travelers-filter__fieldset filter">
+          <legend class="filter__name">Еда<button class="filter_switch" type="button">Показать опции</button></legend>
+        </fieldset>
+        <fieldset class="travelers-filter__fieldset filter">
+          <legend class="filter__name">Транспорт<button class="filter_switch" type="button">Скрыть опции</button></legend>
+          <input class="filter__checkbox" type="checkbox" id="avia" name="avia" checked>
+          <label class="filter__label" for="avia">Авиа</label>
+          <input class="filter__checkbox" type="checkbox" id="bus" name="bus" checked>
+          <label class="filter__label" for="bus">Автобус</label>
+          <input class="filter__checkbox" type="checkbox" id="bike" name="bike">
+          <label class="filter__label" for="bike">Велосипед</label>
+          <input class="filter__checkbox" type="checkbox" id="on-foot" name="on-foot" checked>
+          <label class="filter__label" for="on-foot">Пешком</label>
+        </fieldset>
+        <fieldset class="travelers-filter__fieldset filter">
+          <legend class="filter__name">Левел<button class="filter_switch" type="button">Скрыть опции</button></legend>
+          <label class="filter__label visually-hidden" for="min-level">От</label>
+          <input class="filter__number" type="number" id="min-level" name="min-level" min="0" max="100" value="30">
+          <label class="filter__label visually-hidden" for="max-level">До</label>
+          <input class="filter__number" type="number" id="max-level" name="max-level" min="0" max="100" value="100">
+          <div class="filter__range range">
+            <div class="range__scale">
+              <div class="range__bar" style="
+                width: 70%;
+                margin-left: 30%
+              "></div>
+            </div>
+            <div class="range__toggle range__toggle--min" tabindex="0" style="
+              left: 30%
+            "></div>
+            <div class="range__toggle range__toggle--max" tabindex="0" style="
+              left: 100%
+            "></div>
+          </div>
+        </fieldset>
+        <button class="travelers-filter__submit-button" type="submit" name="button">Показать</button>
+      </form>
+    </div>
     <div class="page-main__catalog catalog">
       <ul class="catalog__list">
         <li class="catalog__item">
