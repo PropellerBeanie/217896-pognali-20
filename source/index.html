@@ -8,62 +8,62 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--index">
     <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="96" height="15" alt="Погнали?">
+      <img src="img/logo-mobile-white@1x.png" width="96" height="15" alt="Погнали?">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span>Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__menu-list menu-list">
+          <li class="menu-list__item">
             <a href="photo.html">
               О сервисе
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="menu-list__item">
             <a href="form.html">
               Направления
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="menu-list__item">
             <a href="catalog.html">
               Попутчики
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="main-nav__user-list user-list">
           <li class="user-list__item">
-            <a class="user-list__login js-login" href="login.html">
+            <a class="user-list__login button button--round js-login" href="login.html">
               Авторизация
             </a>
           </li>
         </ul>
       </div>
+      <div class="main-nav__contacts contacts">
+        <a class="contacts__phone" href="tel:8800555-86-28">
+          8 800 555-86-28
+        </a>
+        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+      </div>
+      <div class="main-nav__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="main-nav__contacts contacts">
-      <a class="contacts__phone" href="tel:8800555-86-28">
-        8 800 555-86-28
-      </a>
-      <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-        mail@htmlacademy.ru
-      </a>
-    </div>
-    <div class="main-nav__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
-        </li>
-      </ul>
-    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Погнали. Сервис для поиска попутчиков для путешествий</h1>
@@ -79,42 +79,44 @@
           <a class="user-menu__phone" href="tel:8800555-86-28"></a>
         </li>
         <li class="user-menu__item">
-          <a class="user-menu__auth js-login" href="login.html">
+          <a class="user-menu__auth button button--mobile button--round js-login" href="login.html">
             Авторизация
           </a>
         </li>
       </ul>
     </div>
     <blockquote class="page-main__review review">
-      <q class="review__quote">Лучшее приложение, что я видел в жизни!</q>
-      <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      <q class="review__quote block-text-mobile">Лучшее приложение, что я видел в жизни!</q>
+      <cite class="review__author block-text-mobile block-text-mobile--bold">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
     </blockquote>
     <ul class="page-main__instructions-list instructions">
-      <li class="instructions__item">
+      <li class="instructions__item instructions__item--1">
         <p class="instructions__item-text">Выберите направление</p>
       </li>
-      <li class="instructions__item">
+      <li class="instructions__item instructions__item--2">
         <p class="instructions__item-text">Изучите идеи путешественников</p>
       </li>
-      <li class="instructions__item">
+      <li class="instructions__item instructions__item--3">
         <p class="instructions__item-text">Находите тех, кто похож на вас</p>
       </li>
-      <li class="instructions__item">
+      <li class="instructions__item instructions__item--4">
         <p class="instructions__item-text">Путешествуйте вместе!</p>
       </li>
     </ul>
     <div class="page-main__about-service about-service">
-      <h2 class="about-service__heading">О сервисе</h2>
-      <p class="about-service__text">
+      <h2 class="about-service__heading block-heading block-heading--mobile">О сервисе</h2>
+      <p class="about-service__text block-text-mobile">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
       </p>
-      <p class="about-service__text about-service__text--bold">
+      <p class="about-service__text about-service__text--bold block-text-mobile block-text-mobile--bold">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
     </div>
     <div class="page-main__directions directions">
-      <h2 class="directions__heading">Направления</h2>
-      <p class="directions__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+      <h2 class="directions__heading block-heading block-heading--mobile">Направления</h2>
+      <p class="directions__text block-text-mobile--dark">
+        Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+      </p>
       <ul class="directions__list">
         <li class="directions__item">
           <img class="directions__item-img" width="270" height="110" src="#" alt="Фото Таиланд">
@@ -141,14 +143,14 @@
           </div>
         </li>
       </ul>
-      <a class="directions__button" href="form.html">Показать все</a>
+      <a class="directions__button button button--mobile" href="form.html">Показать все</a>
     </div>
     <div class="page-main__travelers travelers">
-      <h2 class="travelers__heading">Попутчики</h2>
-      <p class="travelers__text">
+      <h2 class="travelers__heading block-heading block-heading--mobile">Попутчики</h2>
+      <p class="travelers__text block-text-mobile">
         Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
       </p>
-      <p class="travelers__text travelers__text--bold">
+      <p class="travelers__text travelers__text--bold block-text-mobile block-text-mobile--bold">
         Теперь можно легко найти единомышленников!
       </p>
       <ul class="travelers__list">
@@ -207,20 +209,20 @@
           </div>
         </li>
       </ul>
-      <a class="travelers__button" href="form.html">Показать всех</a>
+      <a class="travelers__button button button--mobile" href="form.html">Показать всех</a>
     </div>
     <div class="page-main__add-profile add-profile">
-      <b class="add-profile__heding">Добавьте свой профиль</b>
+      <b class="add-profile__heading block-heading block-heading--mobile">Добавьте свой профиль</b>
       <ul class="add-profile__prices-list prices-list">
-        <li class="prices-list__item">
+        <li class="prices-list__item prices-list__item--1 block-text-mobile block-text-mobile--dark">
           <p class="prices-list__item-text">Базовое размещение</p>
           <span class="prices-list__item-price">Бесплатно</span>
         </li>
-        <li class="prices-list__item">
+        <li class="prices-list__item prices-list__item--2 block-text-mobile block-text-mobile--dark">
           <p class="prices-list__item-text">Вывод на первых позициях</p>
           <span class="prices-list__item-price">99 руб./мес</span>
         </li>
-        <li class="prices-list__item">
+        <li class="prices-list__item prices-list__item--3 block-text-mobile block-text-mobile--dark">
           <p class="prices-list__item-text">Кастомный цвет карточки</p>
           <span class="prices-list__item-price">59 руб./мес</span>
         </li>
@@ -228,15 +230,15 @@
       <a class="add-profile__all-prices" href="#">Показать тарифы для бизнеса</a>
     </div>
     <div class="page-main__contact-us contact-us">
-      <b class="contact-us__heading">Заинтересовались?</b>
-      <p class="contact-us__text">
+      <b class="contact-us__heading block-heading block-heading--mobile">Заинтересовались?</b>
+      <p class="contact-us__text block-text-mobile">
         Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="contact-us__auth js-login" href="login.html">авторизуйтесь</a>.
       </p>
       <form class="contact-us__form" action="https://echo.htmlacademy.ru" method="post">
         <input class="contact-us__email" type="email" name="email" placeholder="E-mail">
-        <input type="submit" name="submit" value="Отправить">
+        <input class="button button--mobile" type="submit" name="submit" value="Отправить">
       </form>
-      <p class="contact-us__text">
+      <p class="contact-us__text block-text-mobile">
         Остались вопросы? Мы с радостью на них ответим!
       </p>
       <div class="contact-us__contacts">
@@ -249,16 +251,20 @@
       </div>
     </div>
     <div class="page-main__map map">
-      <p class="map__address">
-        ул. Большая Конюшенная, 19/8
-      </p>
-      <a class="map__button" href="https://yandex.ru/maps/-/CCQpyNc~TA">Проложить маршрут</a>
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A96ba87ff4b77002210145d533df9dcd1453232744543b6d89e236427b02eb180&amp;width=100%25&amp;height=424&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="map__address-wrapper">
+        <p class="map__address">
+          ул. Большая Конюшенная, 19/8
+        </p>
+        <a class="map__button button button--mobile button--border" href="https://yandex.ru/maps/-/CCQpyNc~TA">Проложить маршрут</a>
+      </div>
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A96ba87ff4b77002210145d533df9dcd1453232744543b6d89e236427b02eb180&amp;width=100%25&amp;height=424&amp;lang=ru_RU&amp;scroll=true">
+      </script>
     </div>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <img src="img/logotype-mobile.svg" width="96" height="15" alt="Погнали?">
+      <img src="img/logo-mobile-blue@1x.png" width="96" height="15" alt="Погнали?">
     </a>
     <div class="page-footer__social footer-social">
       <ul class="footer-social__list">
@@ -276,7 +282,7 @@
     <div class="page-footer__developer developer">
       <span class="developer__text">Разработано</span>
       <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="developer__img" src="#" width="27" height="33" alt="Погнали?">
+        <img class="developer__img" src="#" width="27" height="33" alt="Лого HTML Academy">
       </a>
     </div>
   </footer>
