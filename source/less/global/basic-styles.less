@@ -32,44 +32,13 @@ ul {
   overflow: hidden;
 }
 
-.button {
-  font-family: inherit;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  background-color: @basic-yellow;
-  border: none;
-}
-
-.button:hover {
-  background-color: @special-yellow-dark;
-}
-
-.button:active {
-  background-color: @special-yellow-dark;
-}
-
-.button--round {
-  border-radius: 25px;
-}
-
-.button--mobile {
-  font-size: 18px;
-  font-weight: 700;
-  color: @basic-blue-medium;
-}
-
-.button--border {
-  border: 3px solid @basic-blue-dark;
-}
-
 .page-heading {
   font-weight: 700;
   color: @basic-white;
-}
 
-.page-heading--mobile {
-  font-size: 36px;
+  &--mobile {
+    font-size: 36px;
+  }
 }
 
 .block-heading--mobile {
@@ -84,12 +53,12 @@ ul {
   font-weight: 300;
   font-size: 16px;
   color: @basic-white;
-}
 
-.block-text-mobile--bold {
-  font-weight: 700;
-}
+  &--bold {
+    font-weight: 700;
+  }
 
-.block-text-mobile--dark {
-  color: @special-grey;
+  &--dark {
+    color: @special-grey;
+  }
 }
