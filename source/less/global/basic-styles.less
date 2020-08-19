@@ -1,0 +1,64 @@
+body {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-heading {
+  font-weight: 700;
+  color: @basic-white;
+
+  &--mobile {
+    font-size: 36px;
+  }
+}
+
+.block-heading--mobile {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: @special-orange;
+}
+
+.block-text-mobile {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: @basic-white;
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--dark {
+    color: @special-grey;
+  }
+}
