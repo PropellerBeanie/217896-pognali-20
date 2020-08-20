@@ -1,5 +1,5 @@
 body {
-  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-family: @main-font;
 }
 
 a {
@@ -41,11 +41,13 @@ ul {
   }
 }
 
-.block-heading--mobile {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  color: @special-orange;
+.block-heading {
+  &--mobile {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: @special-orange;
+  }
 }
 
 .block-text-mobile {
