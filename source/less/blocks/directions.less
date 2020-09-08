@@ -1,23 +1,112 @@
+.directions__text-wrapper {
+  padding-left: 24px;
+  margin-bottom: 60px;
+  @media (min-width: @desktop-width) {
+    max-width: 378px;
+  }
+}
+
+.directions__heading {
+  line-height: 24px;
+  margin-bottom: 19px;
+  @media (min-width: @tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.directions__text {
+  font-weight: 300;
+  line-height: 22px;
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.directions__list {
+  @media (min-width: @desktop-width) {
+    max-width: 560px;
+    order: -1;
+  }
+}
+
+.directions__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 190px;
+  margin-bottom: 8px;
+  @media (min-width: @tablet-width) {
+    flex-direction: initial;
+    min-height: 140px;
+  }
+}
+
+.directions__item-img {
+  width: 270px;
+  height: 110px;
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
 .directions__description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 26px 24px 5px;
+  height: 89px;
   background-color: @basic-white;
+  @media (min-width: @tablet-width) {
+    height: initial;
+    min-width: 431px;
+  }
+  @media (min-width: @desktop-width) {
+    min-width: initial;
+  }
 }
 
 .directions__country {
   font-size: 21px;
   font-weight: 700;
+  line-height: 21px;
   color: @basic-black;
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .directions__description {
   font-size: 16px;
   font-weight: 500;
+  line-height: 18px;
   color: @special-grey;
   opacity: 30%;
+  max-width: 136px;
+  @media (min-width: @tablet-width) {
+    max-width: 212px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .directions__travelers-counter {
   font-size: 16px;
   font-weight: 500;
+  line-height: 20px;
   color: @special-grey;
   opacity: 30%;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.directions__button {
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

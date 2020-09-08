@@ -14,4 +14,30 @@
   &--4 {
     background-color: @basic-yellow;
   }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
+  @media (min-width: @desktop-width) {
+    // padding: 0;
+    width: initial;
+  }
+}
+
+.instructions__item-text {
+  width: 150px;
+  margin-left: 24px;
+  // margin-right: 96px;
+  // text-align: left;
+  // vertical-align: middle;
+  // margin: auto 0;
+  @media (min-width: @tablet-width) {
+    width: 211px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
 }

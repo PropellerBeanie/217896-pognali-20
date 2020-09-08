@@ -1,0 +1,130 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.page-body {
+  min-height: 100%;
+  margin: 0;
+  font-family: @main-font;
+  // &--index {
+  background-repeat: no-repeat;
+  // background-color: @basic-blue;
+  background-image: linear-gradient(@basic-blue, @basic-blue), linear-gradient(@basic-blue-dark, @basic-blue-dark);
+  // , url("../img/globe-back-mobile@1x.jpg");
+  // background-position: top;
+  background-size: 100% 763px, 100%;
+  // , 100% 569px;
+  @media (min-width: @tablet-width) {
+    background-color: @special-blue-medium;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-position: center 382px;
+    background-size: auto;
+  }
+
+  &--form {
+    background-color: @basic-blue-light;
+    background-image: none;
+    background-size: initial;
+  }
+
+  &--catalog {
+    background-color: @basic-blue-light;
+    background-image: none;
+    background-size: initial;
+  }
+  // }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+fieldset {
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.page-heading {
+  font-weight: 700;
+  color: @basic-white;
+
+  &--mobile {
+    font-size: 36px;
+  }
+}
+
+.block-heading {
+  &--mobile {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: @special-orange;
+  }
+}
+
+.block-text-mobile {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: @basic-white;
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--dark {
+    color: @special-grey;
+  }
+}

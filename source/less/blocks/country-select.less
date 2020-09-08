@@ -1,4 +1,17 @@
+.country-select {}
+
+.country-select__alphabet-list {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    width: 262px;
+    height: 346px;
+  }
+}
+
 .country-select__alphabet-item {
+  width: 45px;
+  height: 42px;
   font-size: 14px;
   font-weight: 500;
   color: @basic-blue-medium;
@@ -6,6 +19,14 @@
 
   &--current {
     background-color: @basic-blue-light;
+    @media (min-width: @tablet-width) {
+      background-color: @basic-blue-medium;
+      color: @basic-white;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    width: 52px;
+    height: 70px;
   }
 }
 

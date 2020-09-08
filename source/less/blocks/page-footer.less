@@ -1,6 +1,38 @@
 .page-footer {
   background-color: @basic-white;
+}
+
+.page-footer__wrapper {
+  .mobile-wrapper();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37px;
   font-size: 16px;
   font-weight: 400;
   color: @basic-blue-dark;
+  @media (min-width: @tablet-width) {
+    .tablet-wrapper();
+    flex-direction: initial;
+    justify-content: space-around;
+  }
+  @media (min-width: @desktop-width) {
+    .desktop-wrapper();
+  }
+}
+
+.page-footer__logo {
+  margin-bottom: 40px;
+}
+
+.page-footer__social {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.page-footer__social-item {
+  background-color: @basic-yellow;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }

@@ -1,5 +1,31 @@
+.travelers__text-wrapper {
+  @media (min-width: @desktop-width) {
+    min-height: 322px;
+    width: 428px;
+  }
+}
+
+.travelers__list {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
+  @media (min-width: @desktop-width) {
+    order: 1;
+    width: 630px;
+    // flex-direction: column;
+  }
+}
+
 .travelers__item {
   background-color: @basic-white;
+  margin-bottom: 9px;
+  @media (min-width: @tablet-width) {
+    width: 285px;
+    min-height: 483px;
+  }
 }
 
 .travelers__name {
@@ -8,8 +34,22 @@
   color: @basic-blue-medium;
 }
 
+.travelers__description-wrapper {
+  text-align: center;
+  padding-left: 46px;
+  padding-right: 36px;
+}
+
 .travelers__hashtag-list {
   font-size: 16px;
   font-weight: 400;
   color: @special-grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.travelers__button {
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
 }

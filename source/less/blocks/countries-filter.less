@@ -1,6 +1,26 @@
 .countries-filter__heading {
   color: @basic-blue-dark;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.countries-filter__continents-list {
+  display: flex;
+  @media (min-width: @desktop-width) {
+    width: 80%;
+    order: -1;
+  }
+}
+
+.countries-filter__countries-list {
+  @media (min-width: @tablet-width) {
+    width: 156px;
+    height: 329px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .countries-filter__hide-button {
@@ -8,4 +28,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @basic-blue-dark;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }

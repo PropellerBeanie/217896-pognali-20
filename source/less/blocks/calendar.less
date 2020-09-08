@@ -3,3 +3,59 @@
   font-weight: 700;
   color: @basic-blue-medium;
 }
+
+.calendar__week-days-list {
+  display: flex;
+}
+
+.calendar__week-days-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  color: @special-grey;
+  text-transform: uppercase;
+
+  &--weekend {
+    color: @special-red-light;
+  }
+}
+
+.calendar__month-list {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    width: 538px;
+    height: 410px;
+  }
+}
+
+.calendar__month-list-item {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  color: @special-grey;
+  opacity: 0.3;
+  text-transform: uppercase;
+
+  &--selected {
+    background-color: @basic-blue-medium;
+    font-weight: 500;
+    color: @basic-white;
+    opacity: 1;
+
+    &-first {
+      border: 2px solid @special-red-light;
+    }
+  }
+
+  &--after-selected {
+    background-color: @basic-blue-light;
+    font-weight: 500;
+    color: @basic-blue-medium;
+    opacity: 1;
+  }
+  @media (min-width: @tablet-width) {
+    width: 76px;
+    height: 70px;
+  }
+}

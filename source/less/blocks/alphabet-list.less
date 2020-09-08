@@ -1,0 +1,29 @@
+.alphabet-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alphabet-list > * {
+}
+
+.alphabet-list__item {
+  display: none;
+
+  &--selected {
+    display: initial;
+  }
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}
+
+.alphabet-list__item-link {
+  display: none;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: @basic-blue-dark;
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}

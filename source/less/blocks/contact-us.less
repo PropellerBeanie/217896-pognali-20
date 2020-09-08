@@ -1,4 +1,32 @@
-.contact-us__email {
+.contact-us__heading {
+  margin-bottom: 19px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 59px;
+  }
+}
+
+.contact-us__text {
+  margin-bottom: 29px;
+
+  &--2 {
+    margin-bottom: 17px;
+  }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.contact-us__form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 29px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.contact-us__form-email {
+  flex-grow: 1;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -6,8 +34,16 @@
 }
 
 .contact-us__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   font-size: 16px;
   font-weight: 700;
   color: @basic-yellow;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {}
+  @media (min-width: @desktop-width) {
+    flex-direction: initial;
+    justify-content: space-between;
+  }
 }

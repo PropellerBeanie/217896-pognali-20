@@ -1,24 +1,48 @@
 .user-plans__heading {
   font-size: 24px;
-  font-weight: uppercase;
+  text-transform: uppercase;
   color: @basic-blue-medium;
 }
 
+.user-plans__list {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
 .user-plans__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  height: 154px;
+  margin-bottom: 10px;
   background-color: @basic-white;
   list-style: none;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .user-plans__number {
   font-size: 16px;
   font-weight: 500;
   color: @basic-blue-medium;
+  @media (min-width: @tablet-width) {}
 }
 
 .user-plans__countries {
   font-size: 16px;
   font-weight: 700;
   color: @basic-blue-medium;
+  @media (min-width: @tablet-width) {
+    order: -1;
+    margin-right: 70%;
+  }
+  @media (min-width: @desktop-width) {
+    order: initial;
+    margin-right: initial;
+  }
 }
 
 .user-plans__date,
@@ -27,6 +51,10 @@
   font-weight: 500;
   color: @basic-blue-medium;
   text-transform: uppercase;
+  width: 100%;
+  @media (min-width: @tablet-width) {
+    width: initial;
+  }
 }
 
 .user-plans__button {

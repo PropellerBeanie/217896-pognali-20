@@ -1,13 +1,43 @@
 .countries-alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  width: 219px;
+  height: 204px;
   background-color: @basic-white;
   font-size: 14px;
   font-weight: 500;
   color: @basic-blue-medium;
+  @media (min-width: @tablet-width) {
+    background-color: initial;
+    color: @basic-blue-dark;
+    width: 346px;
+    height: 379px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .countries-alphabet__item {
+  width: 43px;
+  height: 40px;
+
   &--active {
     background-color: @basic-blue-medium;
     color: @basic-white;
+  }
+  @media (min-width: @tablet-width) {
+    width: 58px;
+    height: 50px;
+    opacity: 0.3;
+
+    &--active {
+      background-color: initial;
+      color: @basic-blue-dark;
+      opacity: initial;
+    }
   }
 }

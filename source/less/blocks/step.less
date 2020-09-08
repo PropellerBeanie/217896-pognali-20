@@ -1,7 +1,3 @@
-.step__fieldset {
-  border: none;
-}
-
 .step__heading {
   font-size: 20px;
   font-weight: 700;
@@ -53,6 +49,14 @@
   text-transform: uppercase;
 }
 
+.step__country-select-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+  }
+}
+
 .step__add-country-btn {
   background-color: @basic-blue-light;
   font-size: 14px;
@@ -62,11 +66,23 @@
   border: none;
 }
 
+.step__next-button {
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+    width: 286px;
+    height: 80px;
+  }
+}
+
 .step__prev-button {
   font-size: 17px;
   font-weight: 700;
   color: @basic-blue-medium;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+    width: 182px;
+  }
 }
 
 .step__input-heading {
@@ -81,6 +97,7 @@
   font-weight: 400;
   color: @special-grey;
   resize: none;
+  width: 100%;
 
   &::placeholder {
     opacity: 0.3;

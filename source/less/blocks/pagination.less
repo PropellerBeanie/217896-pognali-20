@@ -1,3 +1,25 @@
+.pagination {
+  background-color: @basic-white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__pages-list {
+  display: none;
+  font-weight: 700;
+  color: @basic-blue-medium;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.pagination__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
 .pagination__button {
   background-color: @basic-white;
 }
