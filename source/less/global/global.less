@@ -15,11 +15,11 @@ html {
   font-family: @main-font;
   // &--index {
   background-repeat: no-repeat;
-  // background-color: @basic-blue;
-  background-image: linear-gradient(@basic-blue, @basic-blue), linear-gradient(@basic-blue-dark, @basic-blue-dark);
+  background-color: @basic-blue;
+  // background-image: linear-gradient(@basic-blue, @basic-blue), linear-gradient(@basic-blue-dark, @basic-blue-dark);
   // , url("../img/globe-back-mobile@1x.jpg");
   // background-position: top;
-  background-size: 100% 763px, 100%;
+  // background-image: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(2,0,36,1) 100%, rgba(9,9,121,1) 50%, rgba(9,9,121,1) 100%);
   // , 100% 569px;
   @media (min-width: @tablet-width) {
     background-color: @special-blue-medium;
@@ -62,6 +62,11 @@ p {
 
 input {
   font-family: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 textarea {

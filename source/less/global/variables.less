@@ -6,6 +6,7 @@
 @basic-blue-medium: #1D2E5B;
 @basic-blue-semilight: #E6E8F1;
 @basic-blue-light: #EDEFF6;
+@special-blue-darker: #101D41;
 @special-blue-dark: #132576;
 @special-blue-medium: #182044;
 @special-blue-light: #DFE3F0;
@@ -14,40 +15,61 @@
 @special-yellow-dark: #FFBD30;
 @basic-grey: #E2E5F2;
 @basic-grey-light: #D6DAED;
+@basic-grey-medium: #959BB2;
 @special-grey: #444444;
 @special-grey-light: #CBCED9;
+@special-green: #81E31E;
+@basic-red: #F02323;
+@basic-red-medium: #F9D8D8;
+@basic-red-light: #F9EAEA;
 @special-red: #F47E7E;
+@special-red-medium: #F97676;
 @special-red-light: #FF5C23;
+@special-orange-dark: #F26926;
 @special-orange: #FF8D30;
-@special-orange-light: #FFA530;
-// fonts
-@main-font: "Blogger Sans", "Arial", sans-serif;
-// viewports
+@special-orange-light: #FFA530; // fonts
+@main-font: "Blogger Sans", "Arial", sans-serif; // viewports
 @tablet-width: 768px;
 @desktop-width: 1440px;
-@mobile-width: 320px;
-//wrappers
+@mobile-width: 320px; //wrappers
 @tablet-wrapper-width: @tablet-width - 40*2px;
 @desktop-wrapper-width: @desktop-width - 60*2px;
-@mobile-wrapper-width: @mobile-width - 25*2px;
-// mixins
+@mobile-wrapper-width: @mobile-width - 25*2px; // mixins
+
 .wrapper() {
-    margin: 0 auto;
+  margin: 0 auto;
 }
+
 .mobile-wrapper() {
   width: @mobile-wrapper-width;
   margin: 0 auto;
 }
+
 .tablet-wrapper() {
   width: @tablet-wrapper-width;
   margin: 0 auto;
 }
+
 .desktop-wrapper() {
   width: @desktop-wrapper-width;
   margin: 0 auto;
 }
+
 .reset-wrapper() {
   width: initial;
   margin: 0;
   padding: 0;
+}
+
+.visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

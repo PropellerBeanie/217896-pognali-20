@@ -1,6 +1,34 @@
 .countries-wishlist__list {
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
+  line-height: 16px;
   font-weight: 500;
   color: @basic-blue-medium;
   text-transform: uppercase;
+}
+
+.cointries-wishlist__heading {
+  margin-bottom: 18.95px;
+}
+
+.countries-wishlist__item {
+  // .outline();
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  min-height: 18px;
+  margin-bottom: 10px;
+
+  &::before {
+    position: absolute;
+    // display: block;
+    width: 26px;
+    height: 18px;
+    content: "";
+    top: 0;
+    left: 0;
+    background-image: url("http://placehold.it/26x18");
+    background-color: red;
+  }
 }

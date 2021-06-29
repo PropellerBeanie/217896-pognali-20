@@ -2,24 +2,57 @@
   display: flex;
   flex-wrap: wrap;
 }
+// .filter__name::before {
+//   content: ":";
+// }
 
 .travelers-filter__text {
   font-size: 22px;
+  line-height: 22px;
   font-weight: 700;
   color: @basic-blue-medium;
+  margin-bottom: 23px;
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-bottom: 38px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 15px;
   }
 }
 
 .travelers-filter__fieldset {
+  display: flex;
+  // flex-direction: row !important;
+  flex-wrap: wrap;
+  // .outline();
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 9px;
+
+
+  // & > * {
+  //   .outline--green();
+  // }
   border: none;
   @media (min-width: @tablet-width) {
-    width: 100%;
+    margin-top: 19px;
+    padding: 0;
   }
 }
 
 .travelers-filter__submit-button {
   background-color: @basic-white;
   text-transform: uppercase;
+  width: 100%;
+  min-height: 41px;
+  margin-top: 12px;
+  @media (min-width: @tablet-width) {
+    margin-top: 36px;
+  }
+  @media (min-width: @tablet-width) {
+    margin-top: 36px;
+  }
 }

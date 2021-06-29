@@ -1,25 +1,124 @@
 .pagination {
-  background-color: @basic-white;
+  & > * {
+    .outline--green();
+  }
+  .outline();
+  // background-color: @basic-white;
   display: flex;
-  justify-content: space-between;
+  // margin-bottom: 46px;
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100px;
+    background-color: @basic-white;
+    padding-left: 29px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  @media (min-width: @desktop-width) {
+    padding-right: 27px;
+  }
 }
 
 .pagination__pages-list {
   display: none;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 700;
   color: @basic-blue-medium;
   @media (min-width: @tablet-width) {
     display: flex;
-    font-size: 20px;
-    line-height: 20px;
+    min-width: 180px;
+    // margin-top:
+  }
+}
+
+.pagination__pages-link {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    text-align: center;
+    padding-top: 17px;
+    width: 50px;
+    height: 50px;
+
+    &:not(&--selected):hover {
+      opacity: 0.6;
+    }
+
+    &:not(&--selected):active {
+      opacity: 1;
+    }
+
+    &--selected,
+    &:active {
+      background-color: @basic-yellow;
+      border-radius: 50%;
+    }
   }
 }
 
 .pagination__buttons {
+  // .outline();
   display: flex;
-  justify-content: space-around;
+  background-color: @basic-white;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 51px;
+  border-radius: 20px;
+  @media (min-width: @tablet-width) {
+    width: initial;
+    background-color: initial;
+    min-height: initial;
+    border-radius: initial;
+  }
 }
 
 .pagination__button {
-  background-color: @basic-white;
+  // .outline--green();
+  text-align: center;
+  width: 50%;
+
+  &--back {}
+
+  &--forward {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      vertical-align: middle;
+      content: "";
+      height: 100%;
+      width: 1px;
+      top: 0;
+      left: 0;
+      background-color: @basic-blue-light;
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+    }
+  }
+}
+
+.pagination__link {
+  display: inline-block;
+  // .outline();
+  width: 100%;
+  height: 100%;
+  padding-top: 17px;
+  fill: @basic-blue-medium;
+
+  &:hover {
+    .pagination__link-icon {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    .pagination__link-icon {
+      opacity: 0.3;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    padding: 14px;
+  }
 }

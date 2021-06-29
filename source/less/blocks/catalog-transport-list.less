@@ -1,0 +1,70 @@
+.catalog-transport-list__item {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  // content: "";
+  background-color: @basic-blue-light;
+
+  &:hover {
+    & .tooltip {
+      visibility: visible;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -10px;
+      left: 50% - 20px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid @special-blue-darker;
+    }
+  }
+}
+
+.catalog-transport-list__item-icon {
+  position: absolute;
+
+  & path {
+    fill: @basic-blue-medium;
+    fill-opacity: 0.15;
+  }
+
+  & ellipse {
+    fill: @basic-blue-medium;
+    fill-opacity: 0.15;
+  }
+
+  &--selected {
+    & path {
+      fill-opacity: 1;
+    }
+
+    & ellipse {
+      fill-opacity: 1;
+    }
+  }
+
+  &--avia {
+    left: 8px;
+    top: 9px;
+  }
+
+  &--bus {
+    left: 9.5px;
+    top: 8px;
+  }
+
+  &--bike {
+    left: 8px;
+    top: 9px;
+  }
+
+  &--on-foot {
+    left: 10.4px;
+    top: 8px;
+  }
+}

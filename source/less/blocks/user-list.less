@@ -1,0 +1,53 @@
+.user-list__login {
+  padding: 16px 28px 14px 29px;
+}
+
+.user-list__item-link {
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: relative;
+
+    &--contacts {
+      color: @basic-white;
+      background-color: @basic-yellow;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    &--phone {
+      background-color: @special-orange;
+
+      &:hover {
+        background-color: @special-orange-dark;
+      }
+    }
+
+    &--email {
+      background-color: @special-yellow-dark;
+
+      &:hover {
+        background-color: @special-orange;
+      }
+    }
+  }
+}
+
+.user-list__item-icon {
+  position: absolute;
+  @media (min-width: @desktop-width) {
+    &--phone {
+      top: 16px;
+      left: 16px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &--email {
+      top: 18px;
+      left: 17px;
+      width: 16px;
+      height: 14px;
+    }
+  }
+}

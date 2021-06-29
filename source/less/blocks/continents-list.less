@@ -1,0 +1,19 @@
+.continents-list__link {
+  color: @basic-blue-dark;
+  text-transform: uppercase;
+  opacity: 0.3;
+  // .continents-list__link {
+  &:not(&--active) {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
